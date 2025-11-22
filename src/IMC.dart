@@ -6,7 +6,9 @@ void main() {
   stdout.write("Informe sua altura (m): "); 
   final String? alturaStr = stdin.readLineSync()?.replaceAll(',', '.');
 
-
+  print("==============================================");
+  print("         CALCULADORA DA DÉBORA DE IMC         ");
+  print("==============================================");
   // passando para double e verificando se nao eh null
   final double? pesoTemp = double.tryParse(pesoStr ?? ''); // tryParse tenta converter para double se nao der retorna null
   double? alturaTemp = double.tryParse(alturaStr ?? '');
